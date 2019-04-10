@@ -1,0 +1,312 @@
+/*CSS for all pages*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+  background-color: #FFFCE8;
+}
+
+.bg-light {
+  background-color: #fffbd1!important;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
+
+h2, h3 { 
+    font-family: 'Cormorant', serif; 
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a, p { 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  color: #4c7baa!important;
+}
+
+.btn {
+  background-color: #fffbd1!important;
+}
+
+.btn-outline-secondary, .btn-secondary {
+  color: #4c7baa;
+  border-color: #4c7baa!important;
+}
+
+.sticky-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+#redSpecial {
+    color:  #B22222!important;
+}
+
+.nav-link {
+    color: #292b2c;
+}
+
+.nav-link img {
+    height: 1.7rem;
+    width: 2.2rem;
+}
+
+.navbar-item a {
+  margin-left:5rem;
+  margin-right:5rem;
+  justify-content: space-between;
+}
+
+#worldly {
+  font-size: 2rem!important;
+}
+
+@media (max-width: 991.98px) {
+
+  #worldly {
+    display: none!important;
+  }
+  
+  #forSmall  {
+    margin: auto!important;
+  }
+  
+}
+
+/*----------------------------------------------------------*/
+
+/*Homepage CSS*/
+
+.carousel {
+    box-sizing: border-box;
+}
+
+.carouselContainer {
+  margin-top: 56px;
+}
+
+.carousel-caption {
+  box-sizing: border-box;
+}
+
+.carouselText {
+      text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.carouselImage {
+    margin: 0;
+    height: 80vh;
+}
+
+/*----------------------------------------------------------*/
+
+/*Shop page CSS*/
+
+
+
+#left, #right {
+  margin-top: 48px;
+}
+
+#right {
+  padding: 0;
+  margin-right: 0;
+  overflow: hidden!important;
+}
+
+#left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  padding: 0;
+}
+
+#leftText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#leftText a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#deck {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.spacer {
+    height: 56px;
+    width: 100%;
+}
+
+.card {
+  max-width: 318.17px;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 22vh;
+    object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+
+  .card-deck {
+      display: block;
+      margin-bottom: .75rem;
+      table-layout: fixed;
+      border-spacing: 1.25rem 0;
+  }
+
+  .card-deck .card {
+      display: block;
+      margin-bottom: .75rem;
+      vertical-align: top;
+  }
+    
+    #right {
+        overflow: visible!important;
+    }
+  
+  
+}
+
+.card-body {
+  background-color: #fffbd1;
+}
+
+.necklaceDeck, .earringDeck, .braceletDeck, .accessoriesDeck{
+  padding-top: 1rem!important;  
+  padding-bottom: .5rem!important;
+  margin-bottom: 1rem!important;
+  border-bottom: 2px solid #4c7baa;
+}
+
+
+.container-fluid {
+  padding: 9px;
+}
+
+.innerContainer {
+  min-height: 100vh;
+}
+
+
+/*----------------------------------------------------------*/
+
+/*About page CSS*/
+
+.hero, .heroTwo {
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero {
+  background-image: url(../images/about/crafter.jpg);
+  margin-top: 56px;
+}
+
+.heroTwo {
+    background-image: url(../images/about/leatherworker.jpg);
+  }
+
+.hero h1, .heroTwo h1 {
+    color: #fdd475;
+    font-size: 5rem;
+    opacity: .80;
+}
+
+
+.midtext {
+    width: 27%;
+    padding: 20px;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+
+.midthree {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.midthree img {
+    width: 100%;
+    margin-bottom: 40px;
+    height: 90%;
+}
+
+.midthree .midtexts  {
+    width: 48%;
+    align-content: center;
+}
+
+.newars {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.newars h3 {
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.infoRow {
+  margin-bottom: 2rem; 
+}
+
+.infoPane {
+  margin-bottom: 1rem;
+}
+
+.infoImg{
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+

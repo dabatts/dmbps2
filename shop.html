@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cormorant|Josefin+Sans|Raleway" rel="stylesheet">
+
+    <!-- Social Likes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-likes/dist/social-likes_flat.css">
+      
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+    <title>Worldly Wonders - Shop</title>
+  </head>
+  
+  <body>
+<!-- NavBar Start-->         
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="forSmall"  class="navbar-nav mr-auto ml-3">
+              <li class="nav-item active">
+                <a class="nav-link px-4" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="shop.html#necklaceDeck">Necklaces</a>
+                  <a class="dropdown-item" href="shop.html#earringDeck">Earrings</a>
+                  <a class="dropdown-item" href="shop.html#braceletDeck">Bracelets & Rings</a>
+                  <a class="dropdown-item" href="#">Other Accessories</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" id="redSpecial" href="#">Specials</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="about.html">About Us</a>
+              </li>
+            </ul>
+
+            <a id="worldly" class="navbar-brand" href="index.html">Worldly Wonders</a>
+
+            <!-- Icon Section of NavBar -->
+
+            <ul id="forSmall" class="navbar-nav ml-auto mr-3">
+             <li class="nav-item"> 
+            <div class="container dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fas fa-search"></i>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+               <form class="form-inline m-auto my-lg-0">
+              <input class="form-control m-auto" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary my-auto my-sm-0" type="submit">Search </button>
+            </form>
+              </ul>
+            </div>
+            </li>
+            <li class="nav-item">
+                <a id="signUp" class="nav-link px-3" href="#" data-toggle="modal" data-target="#modalForm">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#"><i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#"><i class="fas fa-flag-usa"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>  
+    <!-- NavBar End -->  
+
+        <!-- Sign Up Modal Start-->
+
+        <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalFormTitle">Stay informed of all the latest news</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <form>
+              <div class="form-group">
+
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">  
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                </div>
+                </div>
+
+              <div class="mb-3">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+
+              <div class="mb-3">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required="">
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+          </div>
+
+
+
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required="">
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+          </div>
+
+
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required="">
+          </div>
+        </div>
+
+          <label for="modalFormInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="modalFormInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Send me your Newsletter!</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Make me a VIP!</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">I don't want to register, but I would like to donate!</label>
+        </div>
+
+
+            </form>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary subscribe" data-dismiss="modal">Subscribe</button>
+            <button type="button" class="btn btn-secondary noThanks">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal End-->
+
+
+
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+
+	<!-- Sidebar Start --> 
+        <div class="col-lg-2 d-none d-lg-block h-100 bg-light fixed-top sideBar" id="left">
+            <ul class="nav flex-column d-none d-lg-block" id="leftText">
+          <li class="nav-item active">
+            <a class="nav-link scroll" href="#necklaceDeck">Necklaces</a>
+          </li>
+
+ 			<li class="nav-item">
+            <a class="nav-link scroll" href="#earringDeck">Earrings</a>
+          </li>
+
+ 			<li class="nav-item">
+            <a class="nav-link scroll" href="#braceletDeck">Bracelets & Rings</a>
+          </li>
+
+           <li class="nav-item">
+            <a class="nav-link scroll" href="#accessoriesDeck">Other Accessories</a>
+          </li>
+
+          <li class="nav-item">
+                  <a class="nav-link scroll" id="redSpecial" href="#">Specials</a>
+			</li>
+        	</ul>
+   		</div>
+
+	<!-- Sidebar End --> 
+
+
+        <div class="col-lg-10 offset-lg-2 py-2" id="right">
+        
+        
+
+
+<!-- Card Deck Start -->
+<div class="container-fluid outerContainer">
+
+<div id="necklaceDeck" class="spacer"></div> <!-- this adds space so the anchor link scrolls to the correct spot. -->
+<!-- Necklace Card Deck Start -->
+
+<div class="container-fluid innerContainer">
+
+<h3 class="necklaceDeck">Necklaces</h3>
+<div class="row" id="deck">
+
+                 <div class="card-deck">
+
+
+	<div class="card" >
+	  <img src="images/shop/beadednecklace.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	      <h5 class="card-title">Beaded Fan Necklace</h5>
+      <p>$190.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+
+
+
+	<div class="card" >
+	  <img src="images/shop/dreamnecklace.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	      <h5 class="card-title">Dreamcatcher Necklace</h5>
+      <p>$110.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+	<div class="card" >
+	  <img src="images/shop/paintedbirdnecklace.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	     <h5 class="card-title">Painted Hummingbird Necklace</h5>
+      <p>$80.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+  </div> <!-- .card-deck end -->
+
+
+</div> <!-- #deck row end -->
+
+</div> <!-- .innerContainer end -->
+
+<!-- Necklace Card Deck End -->
+
+<div id="earringDeck" class="spacer"></div> <!-- this adds space so the anchor link scrolls to the correct spot. -->
+<!-- Earrings Card Deck Start -->
+<div class="container-fluid innerContainer">
+
+
+<h3 class="earringDeck">Earrings</h3>
+<div class="row" id="deck">
+
+                 <div class="card-deck">
+
+
+	<div class="card" >
+	  <img src="images/shop/girlwithearring.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	    <h5 class="card-title">Beaded Dangle Earrings</h5>
+      <p>$125.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+
+	<div class="card" >
+	  <img src="images/shop/silverearrings.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	     <h5 class="card-title">Silver Cross Earrings</h5>
+      <p>$45.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+	<div class="card" >
+	  <img src="images/shop/maskearrings.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	    <h5 class="card-title">Painted Mask Earrings</h5>
+      <p>$110.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+  </div> <!-- .card-deck end -->
+
+
+</div> <!-- #deck row end -->
+
+</div> <!-- .innerContainer end -->
+
+<!-- Earrings Card Deck End -->
+
+<div id="braceletDeck" class="spacer"></div> <!-- this adds space so the anchor link scrolls to the correct spot. -->
+<!-- Bracelet Card Deck Start -->
+<div class="container-fluid innerContainer">
+
+<h3 class="braceletDeck">Bracelets & Rings</h3>
+<div class="row" id="deck">
+
+                 <div class="card-deck">
+
+
+	<div class="card" >
+	  <img src="images/shop/openbracelet.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	    <h5 class="card-title">Silver Open-Clasp Bracelet</h5>
+      <p>$125.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+
+	<div class="card" >
+	  <img src="images/shop/beadedbracelet.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	   <h5 class="card-title">Beaded Bracelet</h5>
+      <p>$70.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+	<div class="card" >
+	  <img src="images/shop/bandedrings.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	     <h5 class="card-title">Banded Gold Rings, Set of 2</h5>
+      <p>$310.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+  </div> <!-- .card-deck end -->
+
+
+</div> <!-- #deck row end -->
+
+</div> <!-- .innerContainer end -->
+
+<!-- Bracelet Card Deck End -->
+
+<div id="accessoriesDeck" class="spacer"></div> <!-- this adds space so the anchor link scrolls to the correct spot. -->
+<!-- Accessories Card Deck Start -->
+<div class="container-fluid innerContainer">
+
+<h3 class="accessoriesDeck">Other Accessories</h3>
+<div class="row" id="deck">
+
+                 <div class="card-deck">
+
+
+	<div class="card" >
+	  <img src="images/shop/wovenhat.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	    <h5 class="card-title">Straw Fedora</h5>
+      <p>$45.00</p>
+	    <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+
+	<div class="card" >
+	  <img src="images/shop/flowershawl.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	    <h5 class="card-title">Flower Embroidered Shawl</h5>
+      <p>$100.00</p>
+	    <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+	<div class="card" >
+	  <img src="images/shop/wovenbag.jpg" class="card-img-top" alt="...">
+	  <div class="card-body">
+	    <h5 class="card-title">Hand-Woven Tote</h5>
+      <p>$75.00</p>
+      <a href="#" class="btn btn-primary">Add to Cart</a>
+	  </div>
+	</div>
+
+  </div> <!-- .card-deck end -->
+
+
+</div> <!-- #deck row end -->
+
+</div> <!-- .innerContainer end -->
+
+<!-- Accessories Card Deck End -->
+
+
+
+</div> <!-- .outerContainer end -->
+
+
+
+
+
+  </div>  <!-- col-10 end -->
+   
+
+
+
+
+
+
+
+
+
+
+
+           </div> 
+
+        </div>
+
+
+
+
+
+    <!-- Footer Start -->
+
+    <footer class="footer">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright: Worldy Wonders LLC
+      <br>
+      <div class="social-likes">
+        <div class="facebook" title="Share link on Facebook">Facebook</div>
+        <div class="twitter" title="Share link on Twitter">Twitter</div>
+        <div class="pinterest" title="Share image on Pinterest" data-media="">Pinterest</div>
+      </div>
+    </div>
+    </footer>
+
+<!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+
+    <!-- Social Likes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/social-likes/dist/social-likes.min.js"></script>
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- My JavaScript -->
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/subscribe.js"></script>  	
+  </body>
+
+</html>
+
+
+
