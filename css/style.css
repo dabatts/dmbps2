@@ -337,8 +337,9 @@ p.carouselTextSmall {
 .hero, .heroTwo {
   background-size: cover;
   min-height: 70vh;
+  width: auto;
   background-repeat: no-repeat;
-/*  background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 
 .hero {
