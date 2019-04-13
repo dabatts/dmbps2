@@ -76,17 +76,6 @@ a {
   font-size: 2rem!important;
 }
 
-@media (max-width: 991.98px) {
-
-  #worldly {
-    display: none!important;
-  }
-  
-  #forSmall  {
-    margin: auto!important;
-  }
-  
-}
 
 /*----------------------------------------------------------*/
 
@@ -104,7 +93,7 @@ a {
   box-sizing: border-box;
 }
 
-.carouselText {
+.carouselText, .carouselTextSmall {
       text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -116,6 +105,12 @@ a {
     margin: 0;
     height: 80vh;
 }
+
+
+.carousel-inner {
+    min-height: 80vh;
+}
+
 
 /*----------------------------------------------------------*/
 
@@ -175,27 +170,6 @@ a {
     object-fit: cover;
 }
 
-@media (max-width: 991.98px) {
-
-  .card-deck {
-      display: block;
-      margin-bottom: .75rem;
-      table-layout: fixed;
-      border-spacing: 1.25rem 0;
-  }
-
-  .card-deck .card {
-      display: block;
-      margin-bottom: .75rem;
-      vertical-align: top;
-  }
-    
-    #right {
-        overflow: visible!important;
-    }
-  
-  
-}
 
 .card-body {
   background-color: #fffbd1;
@@ -224,7 +198,7 @@ a {
 
 .hero, .heroTwo {
   background-size: cover;
-  height: 70vh;
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -299,6 +273,61 @@ a {
 }
 
 /*----------------------------------------------------------*/
+
+/*Media Queries*/
+
+/*Navbar*/
+
+@media (max-width: 991.98px) {
+
+  #worldly {
+    display: none!important;
+  }
+  
+  #forSmall  {
+    margin: auto!important;
+  }
+  
+}
+
+
+/*Homepage*/
+
+@media (max-width: 991.98px) {
+
+h1.carouselTextSmall {
+   font-size: 3rem;
+}
+
+p.carouselTextSmall {
+   font-size: 1rem;
+}
+
+}
+
+/*Shop page*/
+
+@media (max-width: 991.98px) {
+
+  .card-deck {
+      display: block;
+      margin-bottom: .75rem;
+      table-layout: fixed;
+      border-spacing: 1.25rem 0;
+  }
+
+  .card-deck .card {
+      display: block;
+      margin-bottom: .75rem;
+      vertical-align: top;
+  }
+    
+    #right {
+        overflow: visible!important;
+    }
+  
+  
+}
 
 
 
