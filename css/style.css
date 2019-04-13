@@ -335,7 +335,7 @@ p.carouselTextSmall {
 @media (max-width: 991.98px) {
 
 .hero, .heroTwo {
-  background-size: cover;
+  background-size: contain;
   min-height: 70vh;
   width: auto;
   background-repeat: no-repeat;
