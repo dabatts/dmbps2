@@ -329,6 +329,25 @@ p.carouselTextSmall {
   
 }
 
+/*About page*/
+
+
+@media (max-width: 991.98px) {
+
+.hero, .heroTwo {
+  background-size: cover;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+/*  background-attachment: fixed;*/
+}
+
+.hero {
+  background-image: url(../images/about/crafter.jpg);
+  margin-top: 56px;
+}
+
+   
+}
 
 
 
