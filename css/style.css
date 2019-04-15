@@ -195,13 +195,6 @@ a {
 
 /*About page CSS*/
 
-.hero, .heroTwo {
-  background-size: cover;
-  min-height: 70vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 
 .hero h1, .heroTwo h1 {
     color: #fdd475;
@@ -323,15 +316,32 @@ p.carouselTextSmall {
 .hero {
   background-image: url(../images/about/crafterSmall.jpg);
   margin-top: 56px;
+ 
 }
 
 .heroTwo {
     background-image: url(../images/about/leatherworkerSmall.jpg);
+
+  }
+    
+.hero, .heroTwo {
+    min-height: 70vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
 }
 
+
 @media (min-width: 991.98px) {
+    
+.hero, .heroTwo {
+  background-size: cover;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .hero {
   background-image: url(../images/about/crafter.jpg);
