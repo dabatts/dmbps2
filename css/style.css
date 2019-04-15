@@ -321,7 +321,7 @@ p.carouselTextSmall {
 @media (max-width: 991.98px) {
 
 .hero {
-  background-image: url(../images/about/crafter.jpg);
+  background-image: url(../images/about/crafterSmall.jpg);
   margin-top: 56px;
  
 }
@@ -337,7 +337,7 @@ p.carouselTextSmall {
 @media (min-width: 991.98px) {
     
 .hero {
-  background-image: url(../images/about/crafterSmall.jpg);
+  background-image: url(../images/about/crafter.jpg);
   margin-top: 56px;
 }
 
