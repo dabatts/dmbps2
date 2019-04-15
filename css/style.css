@@ -41,8 +41,8 @@ a {
   background-color: #fffbd1!important;
 }
 
-.btn-outline-secondary, .btn-secondary, .btn-primary {
-  color: #4c7baa;
+.btn-outline-secondary, .btn-secondary, .btn-primary, .btn-outline-primary {
+  color: #4c7baa!important;
   border-color: #4c7baa!important;
 }
 
