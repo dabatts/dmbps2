@@ -125,7 +125,6 @@ a {
 #right {
   padding: 0;
   margin-right: 0;
-  overflow: hidden!important;
 }
 
 #left {
@@ -321,16 +320,24 @@ p.carouselTextSmall {
       margin-bottom: .75rem;
       vertical-align: top;
   }
-    
-    #right {
-        overflow: visible!important;
-    }
   
   
 }
 
 
+/*About page*/
+@media (max-width: 991.98px) {
 
+.hero {
+  background-image: url(../images/about/crafterSmall.jpg);
+  margin-top: 56px;
+}
+
+.heroTwo {
+    background-image: url(../images/about/leatherworkerSmall.jpg);
+  }
+  
+}
 
 
 
