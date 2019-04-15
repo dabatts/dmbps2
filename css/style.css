@@ -202,14 +202,6 @@ a {
   background-attachment: fixed;
 }
 
-.hero {
-  background-image: url(../images/about/crafter.jpg);
-  margin-top: 56px;
-}
-
-.heroTwo {
-    background-image: url(../images/about/leatherworker.jpg);
-  }
 
 .hero h1, .heroTwo h1 {
     color: #fdd475;
@@ -335,6 +327,19 @@ p.carouselTextSmall {
 
 .heroTwo {
     background-image: url(../images/about/leatherworkerSmall.jpg);
+  }
+  
+}
+
+@media (min-width: 991.98px) {
+
+.hero {
+  background-image: url(../images/about/crafter.jpg);
+  margin-top: 56px;
+}
+
+.heroTwo {
+    background-image: url(../images/about/leatherworker.jpg);
   }
   
 }
