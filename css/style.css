@@ -325,8 +325,8 @@ p.carouselTextSmall {
   }
     
 .hero, .heroTwo {
-    height:70vh;
-    background-size: contain;
+    height 70vh;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
