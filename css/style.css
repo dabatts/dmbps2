@@ -196,7 +196,7 @@ a {
 /*About page CSS*/
 
 .hero, .heroTwo {
-  background-size: contain;
+  background-size: cover;
   min-height: 70vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
