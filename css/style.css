@@ -325,7 +325,7 @@ p.carouselTextSmall {
   }
     
 .hero, .heroTwo {
-  
+    height:auto;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
