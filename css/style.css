@@ -323,7 +323,7 @@ p.carouselTextSmall {
 .hero {
   background-image: url(../images/about/crafter.jpg);
   margin-top: 57px;
-  object-fit: cover;
+  object-fit: fill;
  
 }
 
