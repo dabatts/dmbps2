@@ -322,13 +322,13 @@ p.carouselTextSmall {
 .hero {
   background-image: url(../images/about/crafterSmall.jpg);
   margin-top: 57px;
-  background-size: contain;
+  background-size: 100% 100%;
  
 }
 
 .heroTwo {
     background-image: url(../images/about/leatherworkerSmall.jpg);
-    background-size: contain;
+    background-size: contain 100%;
 
   }
   
