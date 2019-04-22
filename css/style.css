@@ -295,6 +295,14 @@ p.carouselTextSmall {
 
 }
 
+@media (min-width: 991.98px) {
+
+.carouselContainer {
+  margin-top: 74px;
+} 
+    
+}
+
 /*Shop page*/
 
 @media (max-width: 991.98px) {
