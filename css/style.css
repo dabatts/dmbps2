@@ -199,7 +199,6 @@ a {
   background-size: cover;
   min-height: 70vh;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 
@@ -323,12 +322,13 @@ p.carouselTextSmall {
 .hero {
   background-image: url(../images/about/crafterSmall.jpg);
   margin-top: 57px;
-  background-size: auto;
+  background-size: contain;
  
 }
 
 .heroTwo {
     background-image: url(../images/about/leatherworkerSmall.jpg);
+    background-size: contain;
 
   }
   
@@ -340,10 +340,12 @@ p.carouselTextSmall {
 .hero {
   background-image: url(../images/about/crafter.jpg);
   margin-top: 57px;
+  background-attachment: fixed;
 }
 
 .heroTwo {
     background-image: url(../images/about/leatherworker.jpg);
+    background-attachment: fixed;
   }
   
 }
