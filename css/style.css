@@ -111,7 +111,7 @@ a {
 }
 
 .carouselShopImage {
-    height: 444px;
+    height: 444px!important;
 }
 
 
