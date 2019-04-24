@@ -103,7 +103,7 @@ a {
 
 .carouselImage {
     margin: 0;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 
