@@ -81,17 +81,11 @@ a {
 
 /*Homepage CSS*/
 
-.carousel {
-    box-sizing: border-box;
-}
 
 .carouselContainer {
   margin-top: 56px;
 }
 
-.carousel-caption {
-  box-sizing: border-box;
-}
 
 .carouselText, .carouselTextSmall {
       text-shadow:
@@ -102,13 +96,15 @@ a {
 }
 
 .carouselImage {
-    margin: 0;
+    margin-top: 56px;
     min-height: 80vh;
 }
 
 
 .carousel-inner {
-    min-height: 80vh;
+     background-size: cover;
+     min-height: 80vh;
+     background-repeat: no-repeat;
 }
 
 
