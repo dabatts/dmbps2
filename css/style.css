@@ -102,11 +102,9 @@ a {
 
 
 .carousel-inner {
+     background-size: cover;
      min-height: 80vh;
-}
-
-.carousel-item {
-    min-height: 80vh;
+     background-repeat: no-repeat;
 }
 
 
