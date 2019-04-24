@@ -84,6 +84,7 @@ a {
 
 .carouselContainer {
   margin-top: 56px;
+  min-height: 80vh;
 }
 
 
