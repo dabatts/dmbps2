@@ -97,17 +97,17 @@ a {
 
 .carouselImage {
     margin: 0;
-    min-height: 90vh;
+    min-height: 85vh;
     width: 100%;
 }
 
 
 .carousel-inner {
-     min-height: 90vh;
+     min-height: 85vh;
 }
 
 .carousel-item {
-    min-height: 80vh;
+    min-height: 85vh;
 }
 
 
